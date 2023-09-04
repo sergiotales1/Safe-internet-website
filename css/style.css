@@ -1,0 +1,119 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+   box-sizing: border-box;  
+}
+
+nav {
+   font-size: 1.1rem;
+}
+
+body {
+   background-color: #F7EDED;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* title */
+.mainTitle {
+   text-align: center;
+   background-size: cover;
+   background: #B19180;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FAEFEA;
+   padding: 5.4rem;
+   letter-spacing: .2rem;
+   font-family: 'Roboto Mono', monospace;
+}
+
+h1.display-4 {
+   font-weight: bolder;
+}
+
+
+
+/*  end title */
+
+/* first content section */
+#firstContent, #secondContent {
+   background-color: rgb(229, 229, 229);
+   padding: 1rem;
+}
+
+#firstContent .row div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.5rem;
+   border-bottom: 2px solid #d1d1d1;
+   padding-bottom: 50px;
+}
+
+
+.img {
+   border-radius: 30px;
+   width: 90%;
+   opacity: .9;
+   border: 10px solid #fff;
+}
+
+h2 {
+   font-weight: bold;
+   font-size: 1.4rem;
+   letter-spacing: 2px;
+   padding: 10px 0 15px 0;
+   color: #708C78;
+}
+
+button {
+   margin: 15px 0 0 0;
+}
+
+/* end first content section */
+
+/* second content */
+
+h3 {
+   font-weight: bold;
+   font-size: 1.5rem;
+   padding: 15px 0;
+
+}
+
+h3~p {
+   font-size: 1rem;
+   padding: 0 0 25px 0;
+}
+
+#secondContent img {
+   max-width: 80%;
+   height: auto;
+}
+
+/* end second content */
+
+footer {
+   font-size: 1.2em;
+   padding: 20px;
+}
+/* media queries */
+
+@media (max-width:500px) {
+   .mainTitle {
+      padding: 3rem;
+      height: 200px;
+   }
+
+   h1 span {
+      font-size: 1.4rem;
+   }
+   h1.display-4 {
+      font-size: 2rem;
+   }
+}
