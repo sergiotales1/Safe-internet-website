@@ -10,8 +10,13 @@
 
 nav {
    font-size: 1.1rem;
+   margin: 0;
 }
 
+a.nav-link {
+   margin-left: 25px;
+   padding: 10px;
+}
 
 body {
    background-color: #F7EDED;
@@ -28,20 +33,20 @@ p {
    background: #B19180 url(https://img.myloview.com.br/fotomurais/world-map-digital-technology-concept-business-networking-background-700-193525872.jpg) left center;
    /* background: linear-gradient(45deg, black 10%, #221133 70%); */
    background-size: cover;
-   height: 200px;
+   height: 300px;
    display: flex;
    justify-content: center;
    align-items: center;
    color: black;
    padding: 5.4rem;
    letter-spacing: .2rem;
-   font-family: 'Roboto Mono', sans-serif;
+   font-family: 'Roboto Mono', monospace;
+
 }
 
 h1.display-4 {
    font-weight: bolder;
 }
-
 
 
 /*  end title */
@@ -52,34 +57,23 @@ h1.display-4 {
    padding: 1rem;
 }
 
-#firstContent .row div {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 1rem;
-  
-}
 
-div.row {
+div.row:not(.lastRow) {
    border-bottom: 3px solid #d1d1d1;
+}
+div.row {
    padding-bottom: 50px;
    padding-top: 30px;
 }
 
 .img {
    border-radius: 30px;
-   width: 85%;
+   width: 25%;
    opacity: .9;
    border: 10px solid #fff;
    align-self: center;
 }
 
-div.col-sm-4 {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
 
 h2 {
    font-weight: bold;
@@ -112,8 +106,8 @@ h3~p {
    padding: 0 0 25px 0;
 }
 
-#secondContent img {
-   max-width: 80%;
+#secondContent img{
+   width: 80%;
    height: auto;
 }
 
@@ -133,6 +127,7 @@ footer {
    body::-webkit-scrollbar{
       display: none;
     }
+
    .mainTitle {
       padding: 3.5rem;
       height: 230px;
@@ -141,7 +136,39 @@ footer {
    h1 span {
       font-size: 1.9rem;
    }
+
    h1.display-4 {
       font-size: 2.5rem;
    }
+
+   a.nav-link {
+      margin: 0;
+   }
+
+   div.mobile-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #firstContent .row div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+     
+   }
+
+   .img {
+      width: 85%;
+   }
+
+   #secondContent img {
+      width: 85%;
+   }
+}
+
+@media (min-width:800px) {
+   
 }

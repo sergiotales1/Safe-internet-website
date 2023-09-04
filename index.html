@@ -12,8 +12,8 @@
    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header class="mb-5">
-   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+<header class="position-sticky sticky-top">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
          <a href="#" class="navbar-brand">
             <!-- <img src="img/title-bg.jpg" height="50" width="102"> logo se tiver -->
@@ -28,13 +28,13 @@
                <li class="nav-item">
                   <a href="" class="nav-link">Home</a>
                </li> 
-               <li class="nav-item ml-3">
+               <li class="nav-item">
                   <a href="#" class="nav-link">section1</a>
                </li>
-               <li class="nav-item ml-3">
+               <li class="nav-item">
                   <a href="#" class="nav-link">section2</a>
                </li>
-               <li class="nav-item ml-3">
+               <li class="nav-item">
                   <a href="#" class="nav-link">section3</a>
                </li> <!-- LEMBRAR DE ENDEREÇAR AS SECTIONS COM OS LINKS # -->
             </ul>
@@ -57,13 +57,13 @@
 <section class="container" id="firstContent"> 
    
    <div class="row">
-      <div class="col-sm-4" >
+      <div class="mobile-column">
          <h2>
             Lorem Ipsum dolor
          </h2>
          <img class="img" src="./img/notebook1.avif" alt="graph image">
       </div>
-      <div class="col-sm-8">
+      <div>
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt, earum voluptatum dolore quasi necessitatibus deleniti id quaerat odio fugit excepturi commodi illum optio inventore veritatis cum distinctio animi quod, nam amet? Quos voluptates explicabo exercitationem. Assumenda molestiae dolor corporis reprehenderit porro odit deserunt sit. Eum et, vel distinctio beatae, facilis sapiente mollitia nisi optio ut animi aperiam nobis reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt, earum voluptatum dolore quasi necessitatibus deleniti id quaerat odio fugit excepturi commodi illum optio!
          </p>
@@ -72,13 +72,13 @@
    
    <!-- ---------------------------------- SECOND IMAGE / TEXT FIRST CONTENT SECTION ------------------------------- -->
    <div class="row">
-      <div class="col-sm-4">
+      <div class="mobile-column" >
          <h2>
             Lorem Ipsum dolor
          </h2>
          <img class="img" src="./img/graph1.avif" alt="graph image">
       </div>
-      <div class="col-sm-8" style="display: block;">
+      <div>
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt, earum voluptatum dolore quasi necessitatibus deleniti id quaerat odio fugit excepturi commodi illum optio inventore veritatis cum distinctio animi quod, nam amet? Quos voluptates explicabo exercitationem. Assumenda molestiae dolor corporis reprehenderit porro odit deserunt sit. Eum et, vel distinctio beatae, facilis sapiente mollitia nisi optio ut animi aperiam nobis reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt, earum voluptatum dolore quasi necessitatibus deleniti id quaerat odio fugit excepturi commodi illum optio inventore veritatis cum distinctio animi quod!
          </p>
@@ -88,17 +88,17 @@
    <!-- ---------------------------------- THIRD IMAGE / TEXT FIRST CONTENT SECTION ------------------------------- -->
 
    <div class="row">
-      <div class="col-md-8" style="display: block;">
+      <div class="mobile-column" >
          <h2>
             Lorem Ipsum dolor
          </h2>
+         <img class="img" src="./img/padlock.avif" alt="graph image">
+      </div>
+      <div style="display: block;">
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt, earum voluptatum dolore quasi necessitatibus deleniti id quaerat odio fugit excepturi commodi illum optio inventore veritatis cum distinctio animi quod, nam amet? Quos voluptates explicabo exercitationem. Assumenda molestiae dolor corporis reprehenderit porro odit deserunt sit. Eum et, vel distinctio beatae, facilis sapiente.
          </p>
          <button class="btn btn-outline-dark">Leia Mais</button>
-      </div>
-      <div class="col-md-4">
-         <img class="img" src="./img/padlock.avif" alt="graph image">
       </div>
    </div>
    
@@ -110,7 +110,7 @@
 
 <!----------------------------------------------- SECOND CONTENT SECTION -------------------------------------------->
 <section class="container" id="secondContent">
-      <div class="row text-center p-4 mb-5">
+      <div class="row text-center p-4 mb-5 lastRow"> <!-- remember thar we use this as the last row -->
          <div class="col-md-4">
             <img class="img" src="img/internet2.avif" alt="">
             <h3>Lorem Ipsum Dolor</h3>
