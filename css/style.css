@@ -124,6 +124,7 @@ footer {
 /* media queries */
 
 @media (max-width:500px) {
+   /* remove scrollbar */
    body::-webkit-scrollbar{
       display: none;
     }
@@ -167,8 +168,35 @@ footer {
    #secondContent img {
       width: 85%;
    }
+
+   .col-md-8 h2 {
+      display: none;
+   }
 }
 
 @media (min-width:800px) {
+   .img {
+      width: 85%;
+   }
+
+   div.col-md-8 {
+      margin-top: 18px;
+   }
+
    
+   div.col-md-4.d-md-block.d-none {
+      margin-right: -40px;
+   }
+
+   div.col-md-8:nth-of-type(2n + 1)  {
+      margin-top: 18px;
+      margin-left: -20px;
+   }
+
+   .col-md-8 h2 {
+      margin-bottom: 0;
+   }
 }
+
+/* header bg outline border radius */
+/* navbar left logo */
