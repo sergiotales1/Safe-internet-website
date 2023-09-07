@@ -14,12 +14,17 @@ nav {
 }
 
 .icon {
-   margin-bottom: -10px;
+   margin-bottom: -3px;
+   color: black;
 }
 
 a.nav-link {
    margin-left: 25px;
    padding: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+   color: white;
 }
 
 body {
@@ -28,7 +33,8 @@ body {
 }
 
 p {
-   text-align: justify;
+   text-align: start;
+   line-height: 20px;
 }
 
 strong {
@@ -86,7 +92,7 @@ div.row {
    opacity: .9;
    border: 10px solid #fff;
    align-self: center;
-   max-height: 500px;
+   max-height: 600px;
 }
 
 
@@ -111,29 +117,28 @@ h2 {
 
 h3 {
    font-weight: bold;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    padding: 15px 0;
 
 }
 
 h3~p {
-   font-size: 1rem;
-   padding: 0 0 25px 0;
+   font-size: .9rem;
+   padding: 0 0px 25px 0px;
 }
 
 #secondContent img{
    width: 80%;
-   height: auto;
+   max-height: 180px;
 }
 
-#secondContent p {
-   text-align: center;
-}
+
+
 /* end second content */
 
 footer {
-   font-size: 1.2em;
-   padding: 20px;
+   font-size: 1em;
+   padding: 14px;
    background-color: #d1d1d1;
 }
 /* media queries */
@@ -197,6 +202,11 @@ footer {
       text-align: start;
    }
 
+   #secondContent {
+      padding: 0;
+      padding-bottom: 15px;
+   }
+
 }
 
 @media (min-width:800px) {
@@ -218,7 +228,7 @@ footer {
 
    .img2 {
       padding-right: 20px;
-      padding-top: 10px;
+      padding-top: 25px;
    }
 
    .col-md-7 h2 {
@@ -247,5 +257,30 @@ footer {
    .mainTitle {
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
+   }
+
+   .buttonSection h2 {
+      margin-top: 14px;
+   }
+
+   h3~p {
+      padding: 0 25px 25px 35px;
+   }
+
+   .col-md-4 {
+      padding: 15px;
+   }
+
+   .col-md-4 h3 {
+      padding: 20px 0 20px 0;
+   }
+
+   #secondContent {
+      padding: 0;
+      padding-bottom: 15px;
+   }
+
+   #firstContent .img2 img {
+      height: 500px;
    }
 }
