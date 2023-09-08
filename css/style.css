@@ -132,7 +132,10 @@ h3~p {
    max-height: 180px;
 }
 
-
+div.row.text-center {
+   margin-left: 0;
+   margin-right: 0;
+}
 
 /* end second content */
 
