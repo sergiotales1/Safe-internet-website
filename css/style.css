@@ -9,7 +9,7 @@
 }
 
 nav {
-   font-size: 1.1rem;
+   font-size: 1rem;
    margin: 0;
 }
 
@@ -19,8 +19,8 @@ nav {
 }
 
 a.nav-link {
-   margin-left: 25px;
-   padding: 10px;
+   margin-left: 20px;
+   padding: 7px 0 7px 7px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -34,7 +34,7 @@ body {
 
 p {
    text-align: start;
-   line-height: 20px;
+   line-height: 22px;
 }
 
 strong {
@@ -44,6 +44,11 @@ strong {
 em {
    font-style: italic;
 }
+
+p.line-break {
+   margin-top: -13px;
+}
+
 /* title */
 .mainTitle {
    text-align: center;
@@ -128,8 +133,8 @@ h3~p {
 }
 
 #secondContent img{
-   width: 80%;
-   max-height: 180px;
+   max-width: 85%;
+   max-height: 200px;
 }
 
 div.row.text-center {
@@ -143,6 +148,19 @@ footer {
    font-size: 1em;
    padding: 14px;
    background-color: #d1d1d1;
+}
+
+.thirdSection h2{
+   font-size: 1.4em;
+   margin-top: 25px;
+}
+
+.thirdSection p {
+   margin-top: 15px;
+}
+
+div.mb-5 {
+   margin-top: -30px;
 }
 /* media queries */
 
@@ -181,6 +199,7 @@ footer {
       align-items: flex-start;
       justify-content: center;
       padding: 1rem;
+      flex-direction: column;
    }
 
    .img {
@@ -210,6 +229,9 @@ footer {
       padding-bottom: 15px;
    }
 
+   p.line-break {
+      margin-top: 0;
+   }
 }
 
 @media (min-width:800px) {
@@ -263,7 +285,7 @@ footer {
    }
 
    .buttonSection h2 {
-      margin-top: 14px;
+      margin-top: 0px;
    }
 
    h3~p {
@@ -272,18 +294,34 @@ footer {
 
    .col-md-4 {
       padding: 15px;
+      padding-bottom: 0;
    }
 
    .col-md-4 h3 {
       padding: 20px 0 20px 0;
    }
 
-   #secondContent {
+   #secondContent div.row{
       padding: 0;
-      padding-bottom: 15px;
    }
 
    #firstContent .img2 img {
       height: 500px;
+   }
+
+   nav.navbar{
+      padding: 0.3rem;
+   }
+
+   .thirdSection h2 {
+      margin-top: 25px;
+   }
+   .thirdSection {
+      font-size: .9em;
+   }
+
+   .img3 {
+      padding-right: 20px;
+      padding-top: 25px;
    }
 }
