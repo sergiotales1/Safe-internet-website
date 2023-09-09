@@ -52,7 +52,7 @@ p.line-break {
 /* title */
 .mainTitle {
    text-align: center;
-   background: #B19180 url(https://img.myloview.com.br/fotomurais/world-map-digital-technology-concept-business-networking-background-700-193525872.jpg) left center;
+   background: aquamarine url(https://img.myloview.com.br/fotomurais/world-map-digital-technology-concept-business-networking-background-700-193525872.jpg) left center;
    border-bottom: 1px solid black;
    /* background: linear-gradient(45deg, black 10%, #221133 70%); */
    background-size: cover;
@@ -231,6 +231,10 @@ div.mb-5 {
 
    p.line-break {
       margin-top: 0;
+   }
+
+   a.nav-link {
+      padding: 15px 0 5px 0;
    }
 }
 
