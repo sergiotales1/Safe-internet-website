@@ -52,7 +52,7 @@ p.line-break {
 /* title */
 .mainTitle {
   text-align: center;
-  background: aquamarine url(/img/main.jpg) left center;
+  background: rgba(0, 255, 255, 0.5) url(/img/main.jpg) left center;
   border-bottom: 1px solid black;
   /* background: linear-gradient(45deg, black 10%, #221133 70%); */
   background-size: cover;
